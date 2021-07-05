@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Fruit Machine</title>
+	<link rel="stylesheet" href="fruitstyle.css">
+</head>
+<body>
+	
+	
+	<div id="my-audio-player">
+		<audio autoplay id="my-audio" preload="metadata">
+		  <source src="./audio/star-wars-cantina-song.mp3" type="audio/mpeg">
+		</audio>
+	  </div>
+	<div>
+
+					<h2 class="bankText">Bank:</h2>
+					<div class="bankDisplay">
+					<span class="display_txt blink">£ <span id ="bank">10</span>
+					</span>
+					
+			</div>
+					<h2 class="creditsText">Credits:</h2>
+					<div class="creditsDisplay">
+						<span id ="credits" class="display_txt blink">0</span>
+					</div>
+					<h2 class="scoreText">Score:</h2>
+					<div class ="scoreDisplay">
+						<span id ="score" class="display_txt blink">0</span>
+					</div>
+				</div>
+
+
+		</div>
+		<div id="farRight" class="display_txt marquee blink">
+			<span id ="feedback">May The Force be with you</span>
+	</div> 
+	</div>
+	
+
+
+
+
+		<!-- <div class="top">
+			<div class="wrapper"> -->
+				<!-- <h2 class="bankText">Credits:</h2>
+				<div class="bankDisplay">
+					<span class="display_txt blink">£ <span id ="bank">10</span>
+				</div> -->
+
+				<!-- <div class="display_txt marquee blink">
+						<span id ="feedback">May The Force be with you</span>
+				</div> 
+			</div> 
+		</div> -->
+
+		<div class="content">
+			<div class = "wrapper">
+
+				<!-- <div class="cabinet"> -->
+					<div class="row">
+
+
+
+					<div class="row light-grey">
+
+						<div class="reel_outer">
+
+							<div class="reel">	
+								<span class="reel_txt" id ="val1"><img class="placeholder" src="./sWarsPics/Star wars placeholder.png"></span>
+							</div>
+							<div class="reel">	
+								<span class="reel_txt" id ="val2"><img class="placeholder" src="./sWarsPics/Star wars placeholder.png"></span>
+							</div>
+							<div class="reel">	
+								<span class="reel_txt" id ="val3"><img class="placeholder" src="./sWarsPics/Star wars placeholder.png"></span>
+							</div>
+
+						</div>
+
+					</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br><br>
+	<br>
+					</div>
+					<div class="ButtonsThree" >
+
+						<button class="btn blink" onclick="collect();">Collect</button>
+						<button class="btn blink" onclick="addCredit(1)">INSERT COIN</button>
+						<button id="btn-spin" class="btn blink" onclick="spin();">SPIN</button>
+					
+					</div>
+
+					
+
+			
+
+<script src="htmlfruit.js"></script>
+<script src="https://assets.rpy.xyz/html5-audio-controls.min.js"></script>
+<script>
+  var myElement = document.getElementById('my-audio-player');
+  var color1 = '#616161';
+  var color2 = '#bdbdbd';
+  html5AudioControls.createControls(myElement, color1, color2);
+</script>
+
+</body>
+</html>

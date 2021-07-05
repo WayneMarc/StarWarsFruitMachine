@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "starwars";
+    src: url(./Starjedi.ttf);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-image: url(./star.jpg);
+    
+    
+  }
+
+
+  h1 {
+      font-size: 2.5em;
+      color:white;
+      font-weight: bold;
+      /* font-family: Verdana, Geneva, sans-serif; */
+  }
+  
+  
+  h2 {
+      display: block;
+      font-size: 1.5em;
+      margin-top: 0.83em;
+      margin-bottom: 0.83em;
+      margin-left: 0;
+      margin-right: 0;
+      color:white;
+      font-weight: bold;
+      font-family: "starwars";
+      /* font-family: Verdana, Geneva, sans-serif; */
+  }
+  
+  .wrapper {
+      margin-left: 15%;
+      /* width:900px;
+      position: inherit;
+      margin: 0px auto;
+      background-color:transparent;
+      text-align: center;
+      height:100%;
+      overflow:hidden; */
+  }
+  
+  .top {
+      float:left;
+      width: 100%;
+      height: 100px;
+      background-color:transparent;
+  }
+  
+  .title {
+      float:left;
+      width: 100%;
+      background-color:transparent;
+      height:100px;
+  }
+  
+  .content {
+      float:left;
+      width: 100%;
+      background-color:transparent;
+      height:100%;
+      margin-top: 5%;
+  }
+  .row{
+    align-self: center;
+  }
+  /* .row 
+  {
+      min-height: 100px;
+      width: 100%;
+      background-color:transparent;
+  } */
+  .cabinet
+  {
+      margin: 0px auto;
+      width:600px;
+      background-color:rgb(255, 255, 255, 0);
+      border-radius:10px;
+      border: solid 4px rgb(6, 7, 6);
+  }
+  
+  .displayArea
+  {
+      width:100%;
+      height:50px;
+      padding:10px;
+  }
+  
+  .walletArea
+  {
+      width:100px;
+      height:50px;
+      background-color:rgb(253, 253, 253, 0);
+      margin: 0px auto;
+  }
+  .bankDisplay {
+      float:left;
+      margin-left: 10px;
+      background-color: #40000000;
+      opacity: 1;
+      min-width:100px;
+      height:40px;
+      /* padding:10px; */
+      /* border-radius:10px;
+      border: solid 4px black; */
+  }
+  
+  /* .creditsDisplay
+  {
+      float:left;
+      margin-left: 10px;
+      background-color: #40000000;
+      width:60px;
+      height:40px;
+      padding:10px;
+      border-radius:10px;
+      border: solid 4px black;
+  } */
+  
+  .scoreDisplay
+  {
+      float:left;
+      margin-left: 10px;
+      background-color: #40000000;
+      min-width:150px;
+      height:40px;
+      
+ 
+  }
+  
+  .feedbackDisplay
+  {
+      background-color: #400000;
+      width:280px;
+      float: right;
+      height:40px;
+      padding:10px;
+      border-radius:10px;
+      border: solid 4px gold;
+      overflow:hidden;
+      white-space: nowrap
+  }
+  
+  .bankText
+  {
+      float:left;
+      margin-top: 20px;
+      margin-left: 60px;
+  }
+  
+  .scoreText
+  {
+      float:left;
+      margin-left: 60px;
+  }
+  
+  .creditsText
+  {
+      float:left;
+      margin-left: 10px;
+  }
+  
+  .display_txt
+  {
+      float:left;
+      color:white;
+      /* font-family: Arial, Helvetica, sans-serif; */
+      font-size:30px;
+      margin-top: 25px;
+      font-weight:bold;
+      line-height: 40px;
+  }
+  
+  .reel_txt
+  {
+      color:red;
+      /* font-family: Arial, Helvetica, sans-serif; */
+      font-size:40px;
+      font-weight:900;
+      line-height: 60px
+  }
+  
+  .reel_outer
+  /* {
+      margin: 0px auto;
+      background-color:transparent;
+ 
+      height:90px;
+      margin-left: 15%;
+  } */
+  
+  .reel
+  {
+      /* position:relative; */
+      float:left;
+      background-color:white;
+      width:300px;
+      height:auto;
+      margin-left:17px;
+      margin-top:14px;
+      text-align:center;
+      border: 3px solid black;
+      box-shadow: inset -1px 1px 14px 1px black;
+  }
+  
+  .light-grey
+  {
+      background: rgb(0, 128, 0,0);
+  }
+  
+  
+  
+  .btn {
+      width: 150px;
+      height:60px;
+      color:white;
+      font-weight: bold;
+      /* font-family: "Trebuchet MS", Helvetica, sans-serif; */
+      /* font-family: "starwars"; */
+      font-size: 20px;
+      color: white;
+      background: rgb(26, 32, 27);
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      margin: 20px 10px;
+  }
+  
+  .btn:hover {
+      background-color: blue;
+  }
+  
+  .btn:active {
+      background-color: black;
+  }
+  
+  
+
+  
+  
+  
+  .blink {
+      color: white;
+      -webkit-animation-name: example;
+      -webkit-animation-duration: 2s; 
+      animation-name: example;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+  }
+  
+  
+  @-webkit-keyframes example {
+      50%   {color: red;}
+      50%  {color: white;}
+      50%  {color: red;}
+  }
+  
+  @keyframes example {
+      50%   {color: red;}
+      50%  {color: white;}
+      50%  {color: red;}
+  }
+  
+  
+  .marquee {
+      margin-left:110px;
+      white-space: nowrap;
+      overflow: hidden;
+      background-color: #40000000;
+      width:340px;
+      height:40px;
+      padding:10px;
+      border-radius:10px;
+      border: solid 4px black;
+  }
+  
+  .marquee span {
+      display: inline-block;
+      padding-left: 100%; 
+      animation: marquee 5s linear infinite;
+      font-family: "starwars";
+  }
+  
+  .marquee span:hover {
+      animation-play-state: paused
+  }
+  .Madeby{ color: white;
+    width: fit-content;
+    border: solid;
+    margin-bottom: 2%;
+    margin-left: 89%;
+    margin-right: 5%;
+      
+      
+  }
+  
+
+  @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+  }
+.reelimage{
+      height: 300px;
+      
+  }
+  #farRight{
+      float: right;
+  }
+  .key {
+      width: 200px;
+      
+      border: black solid;
+      border-radius: 4px;
+  }
+  .placeholder {
+      height: 300px;
+  }
+
+.ButtonsThree{
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+    background-color:rgba(0, 128, 0, 0.288);
+}
